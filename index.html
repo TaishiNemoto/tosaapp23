@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>かんたんカウンター</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+    #count {
+      font-size: 40px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>かんたんカウンター</h1>
+  <div id="count">0</div>
+  <button id="plusBtn">＋1</button>
+
+  <script>
+    let count = 0;
+
+    const countDiv = document.getElementById("count");
+    const plusBtn = document.getElementById("plusBtn");
+
+    plusBtn.addEventListener("click", () => {
+      count++;
+      countDiv.textContent = count;
+    });
+  </script>
+
+</body>
+</html>
 
